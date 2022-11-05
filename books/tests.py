@@ -22,4 +22,3 @@ class BookTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "subtitle")
         self.assertTemplateUsed(response, "book_list.html")
-        print('count : ', Book.objects.count())
